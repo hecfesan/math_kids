@@ -120,6 +120,8 @@ select:focus {
   body {
     background-color: white;
     color: black;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .no-print {
@@ -135,6 +137,25 @@ select:focus {
 
   .worksheet-grid {
     display: grid !important;
+  }
+
+  /* Force borders for fraction grids in print */
+  .fraction-grid {
+    border: 3px solid black !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .fraction-square {
+    border: 1px solid black !important;
+  }
+
+  .fraction-square.filled {
+    background-color: #000 !important;
+    /* Make filled squares black in print for high contrast */
+    /* Or keep them colored if the user wants color, but black is safer for standard printers */
+    background-color: #6366f1 !important;
+    /* Let's stick to the color but force it */
   }
 }
 
@@ -164,4 +185,21 @@ select:focus {
   transform: translateY(-5px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
   border-color: rgba(99, 102, 241, 0.3);
+}
+
+.tool-card>*:last-child {
+  margin-top: auto;
+}
+
+/* Hide number spinners */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

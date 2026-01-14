@@ -28,18 +28,18 @@ function Home() {
                     </Link>
                 </div>
 
-                {/* Placeholder for future tools */}
-                <div className="card tool-card" style={{ opacity: 0.5, filter: 'grayscale(1)' }}>
+                <div className="card tool-card">
                     <div style={{ marginBottom: '1.5rem' }}>
-                        <span style={{ fontSize: '3rem' }}>📝</span>
+                        <span style={{ fontSize: '3rem' }}>🥧</span>
                     </div>
-                    <h2 style={{ marginBottom: '1rem' }}>Próximamente</h2>
-                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
-                        Más herramientas para caligrafía, lectura y otros recursos educativos están en camino.
+                    <h2 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Generador de Fracciones</h2>
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                        Generador de fracciones propias e impropias con representación visual.
+                        Incluye opciones para imprimir o resolver en pantalla.
                     </p>
-                    <button className="btn" disabled style={{ width: '100%', cursor: 'not-allowed', background: 'var(--surface)' }}>
-                        Bloqueado
-                    </button>
+                    <Link to="/fraction-generator" className="btn btn-primary" style={{ textDecoration: 'none', width: '100%' }}>
+                        Entrar
+                    </Link>
                 </div>
             </section>
         </div>
