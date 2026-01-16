@@ -55,6 +55,20 @@ function Home() {
                         Entrar
                     </Link>
                 </div>
+
+                <div className="card tool-card">
+                    <div style={{ marginBottom: '1.5rem' }}>
+                        <span style={{ fontSize: '3rem' }}>📝</span>
+                    </div>
+                    <h2 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Generador de Artículos</h2>
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                        Practica los artículos determinados e indeterminados en frases sencillas.
+                        Ideal para refuerzo de lengua y lectoescritura.
+                    </p>
+                    <Link to="/article-generator" className="btn btn-primary" style={{ textDecoration: 'none', width: '100%' }}>
+                        Entrar
+                    </Link>
+                </div>
             </section>
         </div>
     );
