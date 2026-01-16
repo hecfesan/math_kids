@@ -50,6 +50,11 @@ function CoordinateGenerator() {
                         <h1 style={{ margin: 0, fontSize: '1.8rem' }}>Coordenadas</h1>
                     </div>
 
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                        Aprende a localizar puntos en el plano cartesiano.
+                        Elige la cantidad de figuras que quieres buscar y escribe sus coordenadas (X, Y).
+                    </p>
+
                     <CoordinateForm onSubmit={setConfig} />
                 </div>
             ) : (

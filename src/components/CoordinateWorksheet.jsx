@@ -132,7 +132,7 @@ function CoordinateWorksheet({ config, onBack }) {
                     position: 'relative',
                     width: '600px',
                     height: '600px',
-                    margin: '0 auto 3rem auto',
+                    margin: '4rem auto 3rem auto',
                     borderLeft: '4px solid black', // Y Axis
                     borderBottom: '4px solid black' // X Axis
                 }}>
@@ -189,7 +189,7 @@ function CoordinateWorksheet({ config, onBack }) {
 
                     {/* Axis Labels */}
                     <div style={{ position: 'absolute', right: '-20px', bottom: '-10px', fontWeight: 'bold', fontSize: '1.2rem' }}>X</div>
-                    <div style={{ position: 'absolute', left: '-20px', top: '-20px', fontWeight: 'bold', fontSize: '1.2rem' }}>Y</div>
+                    <div style={{ position: 'absolute', left: '-20px', top: '-40px', fontWeight: 'bold', fontSize: '1.2rem' }}>Y</div>
                 </div>
 
                 {/* Answer Table */}
