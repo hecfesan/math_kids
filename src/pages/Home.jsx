@@ -41,6 +41,20 @@ function Home() {
                         Entrar
                     </Link>
                 </div>
+
+                <div className="card tool-card">
+                    <div style={{ marginBottom: '1.5rem' }}>
+                        <span style={{ fontSize: '3rem' }}>📍</span>
+                    </div>
+                    <h2 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Aprendizaje de Coordenadas</h2>
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                        Aprende a localizar figuras en un plano cartesiano (ejes X e Y).
+                        Configura la cantidad de figuras y resuelve en pantalla o imprime.
+                    </p>
+                    <Link to="/coordinate-generator" className="btn btn-primary" style={{ textDecoration: 'none', width: '100%' }}>
+                        Entrar
+                    </Link>
+                </div>
             </section>
         </div>
     );
