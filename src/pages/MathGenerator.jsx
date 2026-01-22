@@ -28,6 +28,9 @@ function MathGenerator() {
 
             <h1 className="no-print" style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '3rem', marginTop: '2rem' }}>
                 <span className="gradient-text">Operaciones matemáticas</span>
+                <Link to="/learn/math" target="_blank" style={{ fontSize: '1.2rem', marginLeft: '1rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)' }} title="¿Cómo hacer operaciones?">
+                    🎓 Ayuda
+                </Link>
             </h1>
             <p className="no-print" style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>
                 Genera hojas de ejercicios personalizados de suma, resta, multiplicación y división.

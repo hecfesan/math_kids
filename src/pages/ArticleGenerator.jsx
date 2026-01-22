@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import ArticleForm from '../components/ArticleForm';
 import ArticleWorksheet from '../components/ArticleWorksheet';
 
@@ -32,9 +32,9 @@ function ArticleGenerator() {
                 </button>
             )}
 
-            {!config ? (
-                <div className="card" style={{ maxWidth: '600px', margin: '0 auto' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
+            <div className="card" style={{ maxWidth: !config ? '600px' : '100%', margin: '0 auto', background: !config ? 'var(--bg-card)' : 'transparent', boxShadow: !config ? 'var(--shadow-lg)' : 'none', padding: !config ? '2rem' : 0 }}>
+                <div className="no-print" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem', justifyContent: !config ? 'flex-start' : 'center' }}>
+                    {!config && (
                         <div style={{
                             width: '48px',
                             height: '48px',
@@ -47,22 +47,30 @@ function ArticleGenerator() {
                         }}>
                             📝
                         </div>
-                        <h1 style={{ margin: 0, fontSize: '1.8rem' }}>Artículos</h1>
-                    </div>
-
-                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
-                        Practica el uso de artículos determinados (el, la...) e indeterminados (un, una...).
-                        Genera frases para completar e imprime la ficha para clase.
-                    </p>
-
-                    <ArticleForm onSubmit={setConfig} />
+                    )}
+                    <h1 style={{ margin: 0, fontSize: '1.8rem' }}>
+                        Artículos
+                        <Link to="/learn/grammar" target="_blank" style={{ fontSize: '1.2rem', marginLeft: '0.8rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)' }} title="¿Qué son los artículos?">
+                            🎓 Ayuda
+                        </Link>
+                    </h1>
                 </div>
-            ) : (
-                <ArticleWorksheet
-                    config={config}
-                    onBack={() => setConfig(null)}
-                />
-            )}
+
+                {!config ? (
+                    <>
+                        <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                            Practica el uso de artículos determinados (el, la...) e indeterminados (un, una...).
+                            Genera frases para completar e imprime la ficha para clase.
+                        </p>
+                        <ArticleForm onSubmit={setConfig} />
+                    </>
+                ) : (
+                    <ArticleWorksheet
+                        config={config}
+                        onBack={() => setConfig(null)}
+                    />
+                )}
+            </div>
         </div>
     );
 }
