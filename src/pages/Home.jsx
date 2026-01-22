@@ -70,6 +70,30 @@ function Home() {
                     </Link>
                 </div>
             </section>
+
+            <section className="learning-section" style={{ marginTop: '4rem', padding: '2rem', background: 'var(--bg-card)', borderRadius: '1rem', boxShadow: 'var(--shadow-sm)' }}>
+                <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2rem' }} className="gradient-text">
+                    Guías de Aprendizaje 🎓
+                </h2>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+                    <Link to="/learn/math" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                        <span style={{ fontSize: '2rem' }}>🧮</span>
+                        <span>Operaciones</span>
+                    </Link>
+                    <Link to="/learn/fractions" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                        <span style={{ fontSize: '2rem' }}>🥧</span>
+                        <span>Fracciones</span>
+                    </Link>
+                    <Link to="/learn/coordinates" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                        <span style={{ fontSize: '2rem' }}>📍</span>
+                        <span>Coordenadas</span>
+                    </Link>
+                    <Link to="/learn/grammar" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                        <span style={{ fontSize: '2rem' }}>📝</span>
+                        <span>Artículos</span>
+                    </Link>
+                </div>
+            </section>
         </div>
     );
 }
