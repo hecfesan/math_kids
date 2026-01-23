@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import MathGenerator from './pages/MathGenerator';
 import FractionGenerator from './pages/FractionGenerator';
@@ -8,7 +8,7 @@ import LearnTopic from './pages/LearnTopic';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/math-generator" element={<MathGenerator />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/article-generator" element={<ArticleGenerator />} />
         <Route path="/learn/:topicId" element={<LearnTopic />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
