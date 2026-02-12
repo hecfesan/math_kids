@@ -82,5 +82,26 @@ export const learningContent = {
         examples: ["Un gato (cualquier gato)", "Unas flores"]
       }
     ]
+  },
+  fractionOps: {
+    title: "Suma y Resta de Fracciones",
+    intro: "Aprende a sumar y restar fracciones paso a paso. Descubre cómo operar con fracciones que tienen el mismo denominador y cómo encontrar denominadores comunes cuando son diferentes. Esta guía visual facilita la comprensión de uno de los conceptos clave de las matemáticas de primaria.",
+    sections: [
+      {
+        title: "Mismo Denominador",
+        content: "Cuando las fracciones tienen el mismo denominador, ¡es muy fácil! Solo tienes que sumar o restar los numeradores (los números de arriba) y mantener el mismo denominador.",
+        examples: ["1/4 + 2/4 = 3/4", "5/6 − 2/6 = 3/6 = 1/2"]
+      },
+      {
+        title: "Diferente Denominador",
+        content: "Si los denominadores son distintos, primero hay que buscar un denominador común (normalmente el mínimo común múltiplo). Después, se convierten las fracciones y se suman o restan los numeradores.",
+        examples: ["1/3 + 1/6 → 2/6 + 1/6 = 3/6 = 1/2", "3/4 − 1/2 → 3/4 − 2/4 = 1/4"]
+      },
+      {
+        title: "Simplificar el Resultado",
+        content: "Después de operar, comprueba si el resultado se puede simplificar dividiendo el numerador y el denominador por su máximo común divisor (MCD).",
+        examples: ["4/8 = 1/2 (dividimos entre 4)", "6/9 = 2/3 (dividimos entre 3)"]
+      }
+    ]
   }
 };

@@ -69,6 +69,20 @@ function Home() {
                         Entrar
                     </Link>
                 </div>
+
+                <div className="card tool-card">
+                    <div style={{ marginBottom: '1.5rem' }}>
+                        <span style={{ fontSize: '3rem' }}>➕</span>
+                    </div>
+                    <h2 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Suma y Resta de Fracciones</h2>
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                        Practica la suma y resta de fracciones con el mismo o diferente denominador.
+                        Configura las operaciones, tipo de denominador y resuelve en pantalla o imprime.
+                    </p>
+                    <Link to="/fraction-ops-generator" className="btn btn-primary" style={{ textDecoration: 'none', width: '100%' }}>
+                        Entrar
+                    </Link>
+                </div>
             </section>
 
             <section className="learning-section" style={{ marginTop: '4rem', padding: '2rem', background: 'var(--bg-card)', borderRadius: '1rem', boxShadow: 'var(--shadow-sm)' }}>
@@ -91,6 +105,10 @@ function Home() {
                     <Link to="/learn/grammar" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
                         <span style={{ fontSize: '2rem' }}>📝</span>
                         <span>Artículos</span>
+                    </Link>
+                    <Link to="/learn/fractionOps" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                        <span style={{ fontSize: '2rem' }}>➕</span>
+                        <span>Suma/Resta Fracciones</span>
                     </Link>
                 </div>
             </section>
