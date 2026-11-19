@@ -103,5 +103,47 @@ export const learningContent = {
         examples: ["4/8 = 1/2 (dividimos entre 4)", "6/9 = 2/3 (dividimos entre 3)"]
       }
     ]
+  },
+  mcmMcd: {
+    title: "Mínimo Común Múltiplo (m.c.m.) y Máximo Común Divisor (m.c.d.)",
+    intro: "Aprende a calcular el m.c.m. y el m.c.d. mediante la descomposición en factores primos. Comprende la diferencia entre múltiplos y divisores, la regla de los exponentes y cómo aplicarlos en problemas de la vida cotidiana.",
+    sections: [
+      {
+        title: "¿Qué es el Máximo Común Divisor (m.c.d.)?",
+        content: "El m.c.d. de dos o más números es el divisor más grande que tienen en común. Se utiliza para hacer repartos equitativos y simplificar fracciones. Para calcularlo con factores primos, se eligen los factores comunes elevados al menor exponente.",
+        examples: [
+          "Divisores de 12: 1, 2, 3, 4, 6, 12",
+          "Divisores de 18: 1, 2, 3, 6, 9, 18",
+          "Divisores comunes: 1, 2, 3, 6 → m.c.d.(12, 18) = 6"
+        ]
+      },
+      {
+        title: "¿Qué es el Mínimo Común Múltiplo (m.c.m.)?",
+        content: "El m.c.m. de dos o más números es el múltiplo más pequeño (distinto de cero) que comparten. Se utiliza para sumar y restar fracciones con distinto denominador y calcular coincidencias periódicas. Para calcularlo con factores primos, se eligen los factores comunes y no comunes elevados al mayor exponente.",
+        examples: [
+          "Múltiplos de 12: 12, 24, 36, 48, 60...",
+          "Múltiplos de 18: 18, 36, 54, 72...",
+          "Múltiplos comunes: 36, 72... → m.c.m.(12, 18) = 36"
+        ]
+      },
+      {
+        title: "Método por Descomposición en Factores Primos",
+        content: "Descompón cada número en números primos (2, 3, 5, 7, 11...). Luego aplica la regla de oro: para el m.c.d. toma solo los factores que se repitan en todos los números con su exponente más pequeño; para el m.c.m. toma todos los factores distintos con su exponente más grande.",
+        examples: [
+          "12 = 2² · 3",
+          "18 = 2 · 3²",
+          "m.c.d.(12, 18) = 2 · 3 = 6",
+          "m.c.m.(12, 18) = 2² · 3² = 4 · 9 = 36"
+        ]
+      },
+      {
+        title: "Problemas prácticos en la vida real",
+        content: "Identifica fácilmente qué necesitas: si el problema pide repartir o agrupar en partes iguales de tamaño máximo, se usa el m.c.d. Si pide saber cuándo volverán a coincidir sucesos en el tiempo (alarmas, autobuses, citas), se usa el m.c.m.",
+        examples: [
+          "Dos luces parpadean cada 6s y 8s: ¿cuándo vuelven a coincidir? → m.c.m.(6, 8) = 24 segundos",
+          "Repartir 24 manzanas y 36 plátanos en cestas iguales con el máximo contenido: → m.c.d.(24, 36) = 12 cestas"
+        ]
+      }
+    ]
   }
 };
