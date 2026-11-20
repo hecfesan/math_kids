@@ -97,6 +97,20 @@ function Home() {
                         Entrar
                     </Link>
                 </div>
+
+                <div className="card tool-card">
+                    <div style={{ marginBottom: '1.5rem' }}>
+                        <span style={{ fontSize: '3rem' }}>✖️</span>
+                    </div>
+                    <h2 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Tablas de Multiplicar</h2>
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                        Practica las tablas del 1 al 9 de forma individual o combinada.
+                        Elige entre preguntas ordenadas o aleatorias y resuelve en pantalla o imprime.
+                    </p>
+                    <Link to="/multiplication-tables" className="btn btn-primary" style={{ textDecoration: 'none', width: '100%' }}>
+                        Entrar
+                    </Link>
+                </div>
             </section>
 
             <section className="learning-section" style={{ marginTop: '4rem', padding: '2rem', background: 'var(--bg-card)', borderRadius: '1rem', boxShadow: 'var(--shadow-sm)' }}>
@@ -127,6 +141,10 @@ function Home() {
                     <Link to="/learn/mcmMcd" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
                         <span style={{ fontSize: '2rem' }}>🔢</span>
                         <span>m.c.m. y m.c.d.</span>
+                    </Link>
+                    <Link to="/learn/multiplicationTables" target="_blank" className="btn" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', textAlign: 'center', padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                        <span style={{ fontSize: '2rem' }}>✖️</span>
+                        <span>Tablas Multiplicar</span>
                     </Link>
                 </div>
             </section>

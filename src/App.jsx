@@ -6,6 +6,7 @@ import CoordinateGenerator from './pages/CoordinateGenerator';
 import ArticleGenerator from './pages/ArticleGenerator';
 import FractionOpsGenerator from './pages/FractionOpsGenerator';
 import McmMcdGenerator from './pages/McmMcdGenerator';
+import MultiplicationTablesGenerator from './pages/MultiplicationTablesGenerator';
 import LearnTopic from './pages/LearnTopic';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/article-generator" element={<ArticleGenerator />} />
         <Route path="/fraction-ops-generator" element={<FractionOpsGenerator />} />
         <Route path="/mcm-mcd-generator" element={<McmMcdGenerator />} />
+        <Route path="/multiplication-tables" element={<MultiplicationTablesGenerator />} />
         <Route path="/learn/:topicId" element={<LearnTopic />} />
       </Routes>
     </HashRouter>

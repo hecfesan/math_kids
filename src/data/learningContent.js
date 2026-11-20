@@ -145,5 +145,38 @@ export const learningContent = {
         ]
       }
     ]
+  },
+  multiplicationTables: {
+    title: "Tablas de Multiplicar (del 1 al 9)",
+    intro: "Aprende y memoriza las tablas de multiplicar de forma amena y eficaz. Descubre trucos matemáticos, la propiedad conmutativa para estudiar la mitad y patrones divertidos que facilitan el cálculo mental.",
+    sections: [
+      {
+        title: "La Propiedad Conmutativa: ¡Aprende solo la mitad!",
+        content: "El orden de los factores no altera el producto. Esto significa que 8 × 6 es exactamente lo mismo que 6 × 8. Si ya te sabes la tabla del 6, ¡ya te sabes casi toda la del 8!",
+        examples: ["8 × 3 = 24 y 3 × 8 = 24", "7 × 5 = 35 y 5 × 7 = 35"]
+      },
+      {
+        title: "Las tablas más fáciles: 1, 2 y 5",
+        content: "La tabla del 1 es el mismo número. La del 2 consiste en calcular el doble. Y en la tabla del 5, todos los resultados acaban siempre en 0 (si multiplicas por par) o en 5 (si multiplicas por impar).",
+        examples: ["7 × 1 = 7", "6 × 2 = 12 (6 + 6)", "5 × 4 = 20", "5 × 7 = 35"]
+      },
+      {
+        title: "El truco de los dobles para el 4 y el 8",
+        content: "Para multiplicar por 4, haz el doble dos veces. Para multiplicar por 8, haz el doble tres veces. ¡Verás qué rápido lo calculas de cabeza!",
+        examples: [
+          "6 × 4 → Doble de 6 es 12, doble de 12 es 24",
+          "7 × 8 → Doble de 7 es 14, doble de 14 es 28, doble de 28 es 56"
+        ]
+      },
+      {
+        title: "El truco mágico de la Tabla del 9",
+        content: "En la tabla del 9, la suma de las dos cifras del resultado siempre suma 9. Además, la cifra de las decenas siempre es una unidad menos que el número por el que multiplicas.",
+        examples: [
+          "9 × 3 = 27 (decenas 2, y 2 + 7 = 9)",
+          "9 × 6 = 54 (decenas 5, y 5 + 4 = 9)",
+          "9 × 8 = 72 (decenas 7, y 7 + 2 = 9)"
+        ]
+      }
+    ]
   }
 };
